@@ -11,7 +11,7 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 1rem;
+  padding: 16px;
 }
 
 .cards {
@@ -24,22 +24,22 @@ body {
 
 .cards_item {
   display: flex;
-  padding: 1rem;
+  padding: 16px;
 }
 
-@media (min-width: 0rem) {
+@media (min-width: 0px) {
   .cards_item {
     width: 100%;
   }
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .cards_item {
     width: 50%;
   }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 896px) {
   .cards_item {
     width: 33.3333%;
   }
@@ -50,17 +50,17 @@ body {
   border-radius: 10px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 16px;
 }
 
 .card_content {
   flex-direction: column;
-  padding-bottom: 1rem;
-  padding-top:1rem;
+  padding-bottom: 16px;
+  padding-top:16px;
   text-align: center;
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 1280px) {
   .card_chart::before {
     padding-top: 66.6%;
   }
@@ -68,7 +68,7 @@ body {
 
 .card_title {
   color: white;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -78,9 +78,9 @@ body {
   flex: 1 1 auto;
   color: white;
   opacity: 50%;
-  font-size: 0.6rem;
+  font-size: 9.6px;
   line-height: 1.5;
-  margin-top: 0.5rem;
+  margin-top: 8px;
 }
 
 #card_chart-distance{
@@ -94,7 +94,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  max-width: 55%;
+  min-width: 45%;
 }
 
 #card_chart-activities{
@@ -102,6 +103,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
 }
 
 .card_image-plus-icon {

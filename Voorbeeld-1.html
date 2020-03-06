@@ -1,7 +1,6 @@
 <meta charset="UTF-8">
 <title>SpaceX</title>
 <link rel="stylesheet" type="text/css" href="Voorbeeld-1.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
@@ -12,6 +11,8 @@
       <img class="card_image-spacex" src="afbeeldingen/spacex-logo.png">
     </div>
   </li>
+</ul>
+
 <ul class="cards">
   <li class="cards_item">
     <div class="card">
@@ -113,7 +114,7 @@
 
         var options = {
           title: 'Distances in the Solar System',
-          colorAxis: {colors: ['yellow', 'red']},
+          colorAxis: {colors: ['white', 'red']},
           hAxis: {title: 'Distance to the sun (1.000.000 km)'},
           backgroundColor: { fill:'transparent' },
 
@@ -171,6 +172,7 @@
         var options = {
           pieHole: 0.5, backgroundColor: { fill:'transparent' },
           legend : {position:"none"},
+          colors: ['#4C1E71', '#642A93', '#8552AD', '#A883C6', '#D9C4EA'],
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('card_chart-activities'));
